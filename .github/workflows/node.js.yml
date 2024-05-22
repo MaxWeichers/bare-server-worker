@@ -28,3 +28,9 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run build
+    - run: git add dist
+    - run: git commit -m "Upload built scripts"\
+    - run: git remote add origin https://github.com/MaxWeichers/bare-server-worker.git
+    - run: git push -u origin master
+    - run: git push origin master  
+
