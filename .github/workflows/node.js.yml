@@ -32,8 +32,8 @@ jobs:
     - run: git commit -m "Upload built scripts"\
     - run: git remote add origin https://github.com/MaxWeichers/bare-server-worker.git
     - run: |
-          git config --global user.name 'maxweichers'
-          git config --global user.email 'maxweichers@proton.me'
+          git config user.name 'maxweichers'
+          git config user.email 'maxweichers@proton.me'
           git commit -am "Automated report"
           git push
 
